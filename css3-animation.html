@@ -9,8 +9,8 @@ permalink: /css3-animation/
 #animateTest {
   text-align: center;
   background: #4f2d7f;
-  padding: 40px;
-  width: 300px;
+  padding: 30px 0;
+  width: 80%;
   height: 50px;
   line-height: 50px;
   color: #fff;
@@ -43,7 +43,7 @@ permalink: /css3-animation/
 
 .box {
   border: 1px solid #CCC;
-  width: 800px;
+  width: 100%;
   padding: 1em 0;
   margin: 0 auto;
 }
@@ -68,7 +68,9 @@ h3 {
   color:#fff;
 }
 #animateTest.flip {
+    -webkit-animation-name: flip;
     animation-name: flip;
+    -webkit-backface-visibility: visible;
     backface-visibility: visible;
 }
 </style>
@@ -92,6 +94,7 @@ h3 {
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('swing');">swing</a>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('wobble');">wobble</a>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('pulse');">pulse</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rubberBand');">rubberBand</a>
 
     <h3>Flippers (currently Webkit, Firefox Nightlies, &amp; IE10 only)</h3>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flip');">flip</a>
@@ -99,6 +102,10 @@ h3 {
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipOutX');">flipOutX</a>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipInY');">flipInY</a>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipOutY');">flipOutY</a>
+
+    <h3>Lightspeed</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('lightSpeedIn');">lightSpeedIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('lightSpeedOut');">lightSpeedOut</a>
 
     <h3>Fading entrances</h3>
     <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeIn');">fadeIn</a>
