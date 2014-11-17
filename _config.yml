@@ -1,0 +1,11 @@
+# Site settings
+title: Web development document
+email: rock.wang@mrm-mccann.com
+description: mrm-mccann
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mrmdev.github.io/" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
