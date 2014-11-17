@@ -1,0 +1,169 @@
+---
+layout: page
+title: CSS3动画
+permalink: /css3-animation/
+---
+
+
+<style type="text/css">
+#animateTest {
+  text-align: center;
+  background: #4f2d7f;
+  padding: 40px;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: bold;
+  
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .2s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: .2s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: .2s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+.box {
+  border: 1px solid #CCC;
+  width: 800px;
+  padding: 1em 0;
+  margin: 0 auto;
+}
+.buttons {
+  margin: 5em auto 0;
+}
+h3 {
+  margin-top: 1.5em;
+}
+.butt {
+  color: #fff;
+  background: #4f2d7f;
+  padding: .5em .75em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: .5em .25em;
+  line-height: 1.5em;
+  display: inline-block;
+}
+.butt:visited{
+  color:#fff;
+}
+#animateTest.flip {
+    animation-name: flip;
+    backface-visibility: visible;
+}
+</style>
+
+<link href="/css/animate.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+</head>
+
+<body>
+  <a name="cta">&nbsp;</a>
+  <div class="box">
+    <div id="animateTest" class="">Stay hungry. Stay foolish.</div>
+  </div>
+  
+  <div class="buttons">
+    <h3>Attention seekers</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flash');">flash</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounce');">bounce</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('shake');">shake</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('tada');">tada</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('swing');">swing</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('wobble');">wobble</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('pulse');">pulse</a>
+
+    <h3>Flippers (currently Webkit, Firefox Nightlies, &amp; IE10 only)</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flip');">flip</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipInX');">flipInX</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipOutX');">flipOutX</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipInY');">flipInY</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('flipOutY');">flipOutY</a>
+
+    <h3>Fading entrances</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeIn');">fadeIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInUp');">fadeInUp</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInDown');">fadeInDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInLeft');">fadeInLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInRight');">fadeInRight</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInUpBig');">fadeInUpBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInDownBig');">fadeInDownBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInLeftBig');">fadeInLeftBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeInRightBig');">fadeInRightBig</a>
+
+    <h3>Fading exits</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOut');">fadeOut</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutUp');">fadeOutUp</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutDown');">fadeOutDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutLeft');">fadeOutLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutRight');">fadeOutRight</a>     
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutUpBig');">fadeOutUpBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutDownBig');">fadeOutDownBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutLeftBig');">fadeOutLeftBig</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('fadeOutRightBig');">fadeOutRightBig</a>
+
+    <h3>Bouncing entrances</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceIn');">bounceIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceInDown');">bounceInDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceInUp');">bounceInUp</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceInLeft');">bounceInLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceInRight');">bounceInRight</a>
+
+    <h3>Bouncing exits</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceOut');">bounceOut</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceOutDown');">bounceOutDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceOutUp');">bounceOutUp</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceOutLeft');">bounceOutLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('bounceOutRight');">bounceOutRight</a>
+
+    <h3>Rotating entrances</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateIn');">rotateIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateInDownLeft');">rotateInDownLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateInDownRight');">rotateInDownRight</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateInUpLeft');">rotateInUpLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateInUpRight');">rotateInUpRight</a>
+
+    <h3>Rotating exits</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateOut');">rotateOut</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateOutDownLeft');">rotateOutDownLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateOutDownRight');">rotateOutDownRight</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateOutUpLeft');">rotateOutUpLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rotateOutUpRight');">rotateOutUpRight</a>
+
+    <h3>Specials</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('hinge');">hinge</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rollIn');">rollIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('rollOut');">rollOut</a>
+    <h3>Zoom Entrances</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomIn');">zoomIn</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomInDown');">zoomInDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomInLeft');">zoomInLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomInRight');">zoomInRight</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomInUp');">zoomInUp</a>
+    <h3>Zoom Exits</h3>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomOut');">zoomOut</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomOutDown');">zoomOutDown</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomOutLeft');">zoomOutLeft</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomOutRight');">zoomOutRight</a>
+    <a class="butt butt-small" href="#cta" onclick="$('#animateTest').removeClass().addClass('zoomOutUp');">zoomOutUp</a>
+  </div>
