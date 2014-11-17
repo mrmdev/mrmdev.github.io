@@ -4,8 +4,8 @@ email: rock.wang@mrm-mccann.com
 description: mrm-mccann
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mrmdev.github.io/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  mrmdev
+permalink: /:title
 
 # Build settings
 markdown: kramdown
