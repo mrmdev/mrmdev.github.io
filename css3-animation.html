@@ -46,6 +46,7 @@ permalink: /css3-animation/
   width: 100%;
   padding: 1em 0;
   margin: 0 auto;
+  background-color: #fff;
 }
 .buttons {
   margin: 5em auto 0;
@@ -73,15 +74,22 @@ h3 {
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
 }
+.affix {
+  position: fixed;
+  top:0;
+  width: 100%;
+  left:0;
+}
 </style>
 
 <link href="/css/animate.min.css" rel="stylesheet" type="text/css" />
 <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/affix.js"></script>
 </head>
 
 <body>
-  <a name="cta">&nbsp;</a>
-  <div class="box">
+  <!-- <a name="cta">&nbsp;</a> -->
+  <div class="box" data-spy="affix" data-offset-top="170" data-offset-bottom="0">
     <div id="animateTest" class="">Stay hungry. Stay foolish.</div>
   </div>
   
