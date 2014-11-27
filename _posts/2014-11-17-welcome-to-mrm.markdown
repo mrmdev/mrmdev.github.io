@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to mrm!"
+title:  "Welcome to MRM!"
 date:   2014-11-17 15:00:21
 categories: rock 
 ---
