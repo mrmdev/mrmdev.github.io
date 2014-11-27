@@ -36,7 +36,7 @@ permalink: /git/
 <h3>简单说明</h3>
 请将不需要提交的文件比如：PSD源文件、测试目录或文件，使用.gitignore排除掉。
 
-如果想更了解[Git]可以访问http://git-scm.com/。
+关于[Git]。
 
 
 [bitbucket]:https://bitbucket.org/
